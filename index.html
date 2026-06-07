@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Farm System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 class="title">🌱 Smart Cultivation System</h1>
+
+  <div class="grid">
+
+    <!-- Farmer Card -->
+    <div class="card">
+      <h2>Add Farmer</h2>
+      <input id="farmerName" placeholder="Name">
+      <input id="farmerLocation" placeholder="Location">
+      <button onclick="addFarmerUI()">Add Farmer</button>
+    </div>
+
+    <!-- Crop Card -->
+    <div class="card">
+      <h2>Add Crop</h2>
+      <input id="cropName" placeholder="Crop Name">
+      <input id="cropArea" type="number" placeholder="Area">
+      <input id="cropYield" type="number" placeholder="Expected Yield">
+      <button onclick="addCropUI()">Add Crop</button>
+    </div>
+
+    <!-- Report Card -->
+    <div class="card full">
+      <h2>Farm Report</h2>
+      <button onclick="showReport()">Generate Report</button>
+      <pre id="output"></pre>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+  <script src="ui.js"></script>
+
+</body>
+</html>
